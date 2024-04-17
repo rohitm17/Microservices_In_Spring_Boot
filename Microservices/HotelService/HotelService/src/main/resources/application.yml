@@ -1,0 +1,29 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: HOTEL-SERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/microservice
+    username: postgres
+    password: passwd
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql : true
+
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+
+#  Release Train   Spring Boot Generation
+#  2023.0.x (Leyton)   3.2.x
+#  2022.0.x (Kilburn)  3.0.x, 3.1.x (Starting with 2022.0.3)
+#  2021.0.x (Jubilee)  2.6.x, 2.7.x (Starting with 2021.0.3)
+#  2020.0.x (Ilford)   2.4.x, 2.5.x (Starting with 2020.0.3)
